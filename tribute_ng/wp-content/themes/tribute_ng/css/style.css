@@ -1,4 +1,5 @@
 div.background-img {
+  background-color: #0540F2;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -10,7 +11,7 @@ div.background-img {
 }
 
 div.row.cover-mirrored {
-  height: 173px;
+  height: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
