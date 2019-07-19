@@ -37,10 +37,11 @@
   <div class="row">
     <div class="col-6"></div>
     <div class="col-6 pl-5 mt-3">
+      <div class="blog-post">
+        <h3><?php the_title(); ?></h3>
 
-      <h3><?php the_title(); ?></h3>
-
-      <?php the_content(); ?>
+        <p><?php the_content(); ?></p>
+      </div>
 
     </div>
   </div>
