@@ -2,7 +2,7 @@
 
 <div class="background-img"></div>
 
-<div class="container">
+<div class="container-fluid">
 
   <div class="fixed-top">
 
@@ -39,20 +39,29 @@
     <div class="row">
 
       <div class="col-6"></div>
+
       <div class="col-6 pl-5 mt-3">
         <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+
           <div class="blog-post card bg-transparent" style="width: 27em;">
+
             <div class="card-body bg-transparent">
+
               <h5 class="card-title text-light">Cantor e Compositor</h5>
+
               <p class="card-text text-light">Esse é um micro texto: é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60.</p>
 
               <a href="<?php the_permalink(); ?>" class="btn btn-light text-dark">Continuar</a>
+
             </div>
+
           </div>
         <?php endwhile; ?>
 
         <?php else : get_404_template(); endif; ?>
+
         </div>
+
       </div>
 
   </div>

@@ -2,21 +2,26 @@
 
 <div class="background-img"></div>
 
-<div class="container">
+<div class="container-fluid">
 
   <div class="row cover-mirrored"></div>
 
   <div class="row">
+
     <div class="col-6"></div>
+
     <div class="col-6 pl-5">
 
       <nav class="navbar navbar-expand-lg navbar-dark" role="navigation">
+
         <div class="container">
+
       	<!-- Brand and toggle get grouped for better mobile display -->
       	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-      		<span class="navbar-toggler-icon"></span>
-      	</button>
-      		<?php
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+          <?php
       		wp_nav_menu( array(
       			'theme_location'    => 'principal',
       			'depth'             => 2,
@@ -28,29 +33,34 @@
       			'walker'            => new WP_Bootstrap_Navwalker(),
       		) );
       		?>
-      	</div>
+
+        </div>
+
       </nav>
 
     </div>
+
   </div>
 
   <div class="row">
 
-    <div class="col-6"></div>
+    <div class="col">
 
-    <div class="col-6 pl-5 mt-3">
+      <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
-      <?php if(have_posts()) : while(have_posts();) : the_posts(); ?>
+        <div class="md-5 ml-5 text-align-center bg-light">
 
-        <h3><?php the_title(); ?></h3>
+          <h3><?php the_title(); ?></h3>
 
-        <?php the_content(); ?>
+          <?php the_content(); ?>
 
-        <p class="text-muted">Publicado em: <span class="badge-my-color-4"><?php echo get_the_date('d/m/y'); ?></span></p>
+          <p class="text-muted">Publicado em: <span class="badge-my-color-4"><?php echo get_the_date('d/m/y'); ?></span></p>
+
+        </div>
 
       <?php endwhile; ?>
 
-    <?php else : get_404_template(); ?>
+    <?php else : get_404_template(); endif; ?>
 
     </div>
 
