@@ -35,15 +35,25 @@
   </div>
 
   <div class="row">
+
     <div class="col-6"></div>
+
     <div class="col-6 pl-5 mt-3">
-      <div class="blog-post">
+
+      <?php if(have_posts()) : while(have_posts();) : the_posts(); ?>
+
         <h3><?php the_title(); ?></h3>
 
-        <p><?php the_content(); ?></p>
-      </div>
+        <?php the_content(); ?>
+
+        <p class="text-muted">Publicado em: <span class="badge-my-color-4"><?php echo get_the_date('d/m/y'); ?></span></p>
+
+      <?php endwhile; ?>
+
+    <?php else : get_404_template(); ?>
 
     </div>
+
   </div>
 
 </div>
