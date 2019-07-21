@@ -55,7 +55,7 @@
 
               <p class="card-text text-light">Esse é um micro texto: é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60.</p>
 
-              <a href="<?php the_permalink(); ?>" class="btn btn-light text-dark">Continuar</a>
+              <a href="<?php the_permalink(); ?>" class="btn btn-danger text-light">Continuar</a>
 
             </div>
 

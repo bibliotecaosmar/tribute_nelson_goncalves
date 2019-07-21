@@ -1,3 +1,6 @@
+// Import Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
 // Theme Colors
 $sky-theme: #0540F2;
 $my-color-2: #F294C0;
@@ -40,7 +43,7 @@ div.sheet-post {
 }
 
 // Bootstrap Modification
-.btn-primary {
+.btn-danger {
   background-color: $button;
 }
 
@@ -53,6 +56,3 @@ div.sheet-post {
   max-width: 100%;
   height: auto;
 }
-
-// Import Bootstrap
-@import "node_modules/bootstrap/scss/bootstrap";
