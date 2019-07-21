@@ -1,23 +1,23 @@
 // Theme Colors
-// $my-color-1: ;
-// $my-color-2: ;
-// $my-color-3: ;
+$sky-theme: #0540F2;
+$my-color-2: #F294C0;
+$flame-theme: #F24141;
 // $my-color-4: ;
 // $my-color-5: ;
 
-// $theme-colors: (
-//   "my-color-1": $my-color-1,
-//   "my-color-2": $my-color-2,
-//   "my-color-3": $my-color-3,
+$theme-colors: (
+  "sky-theme": $sky-theme,
+  "my-color-2": $my-color-2,
+  "flame-theme": $flame-theme,
 //   "my-color-4": $my-color-4,
 //   "my-color-5": $my-color-5
-// );
+);
 
+$bg: $sky-theme;
+$sea-theme: $my-color-2;
+$button: $flame-theme;
 
-// Theme Color Classes
-
-
-// Theme Element Classes
+// Background Image
 div.background-img {
   position: absolute;
   width: 100%;
@@ -27,8 +27,10 @@ div.background-img {
   -moz-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  background-color: $bg;
 }
 
+// Invisible Cover
 div.row.cover-mirrored {
   height: 173px;
 }
@@ -37,7 +39,12 @@ div.sheet-post {
   height: 100%;
 }
 
-// WordPress Classes
+// Bootstrap Modification
+.btn-primary {
+  background-color: $button;
+}
+
+// Image Responsive WordPress
 .size-auto,
 .size-full,
 .size-large,

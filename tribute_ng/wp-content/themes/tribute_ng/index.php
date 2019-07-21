@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="background-img"></div>
+<div class="background-img bg"></div>
 
 <div class="container-fluid">
 
@@ -9,7 +9,9 @@
     <div class="row cover-mirrored"></div>
 
     <div class="row">
+
       <div class="col-6"></div>
+
       <div class="col-6 pl-5">
 
         <nav class="navbar navbar-expand-lg navbar-dark" role="navigation">
@@ -34,6 +36,7 @@
         </nav>
 
       </div>
+
     </div>
 
     <div class="row">
@@ -41,6 +44,7 @@
       <div class="col-6"></div>
 
       <div class="col-6 pl-5 mt-3">
+
         <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
           <div class="blog-post card bg-transparent" style="width: 27em;">
@@ -56,6 +60,7 @@
             </div>
 
           </div>
+
         <?php endwhile; ?>
 
         <?php else : get_404_template(); endif; ?>
