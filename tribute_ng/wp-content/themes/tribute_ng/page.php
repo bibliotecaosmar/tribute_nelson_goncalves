@@ -48,7 +48,7 @@
 
       <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
-        <div class="md-5 ml-5 text-align-center bg-light">
+        <div class="md-5 bg-light">
 
           <h3><?php the_title(); ?></h3>
 

@@ -1,3 +1,23 @@
+// Theme Colors
+// $my-color-1: ;
+// $my-color-2: ;
+// $my-color-3: ;
+// $my-color-4: ;
+// $my-color-5: ;
+
+// $theme-colors: (
+//   "my-color-1": $my-color-1,
+//   "my-color-2": $my-color-2,
+//   "my-color-3": $my-color-3,
+//   "my-color-4": $my-color-4,
+//   "my-color-5": $my-color-5
+// );
+
+
+// Theme Color Classes
+
+
+// Theme Element Classes
 div.background-img {
   position: absolute;
   width: 100%;
@@ -16,3 +36,16 @@ div.row.cover-mirrored {
 div.sheet-post {
   height: 100%;
 }
+
+// WordPress Classes
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
+// Import Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
