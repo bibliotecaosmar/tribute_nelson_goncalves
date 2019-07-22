@@ -4,63 +4,69 @@
 
 <div class="container-fluid">
 
-  <div class="row cover-mirrored"></div>
+  <div class="fixed-top">
 
-  <div class="row">
+    <div class="row cover-mirrored align-items-end">
 
-    <div class="col-6"></div>
+      <div class="col-6"></div>
 
-    <div class="col-6 pl-5">
+      <div class="col-6 pl-5">
 
-      <nav class="navbar navbar-expand-lg navbar-dark" role="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark" role="navigation">
 
-        <div class="container">
+          <div class="container">
 
-      	<!-- Brand and toggle get grouped for better mobile display -->
-      	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-          <?php
-      		wp_nav_menu( array(
-      			'theme_location'    => 'principal',
-      			'depth'             => 2,
-      			'container'         => 'div',
-      			'container_class'   => 'collapse navbar-collapse',
-      			'container_id'      => 'bs-example-navbar-collapse-1',
-      			'menu_class'        => 'nav navbar-nav',
-      			'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-      			'walker'            => new WP_Bootstrap_Navwalker(),
-      		) );
-      		?>
+            <?php
+            wp_nav_menu( array(
+              'theme_location'    => 'principal',
+              'depth'             => 2,
+              'container'         => 'div',
+              'container_class'   => 'collapse navbar-collapse',
+              'container_id'      => 'bs-example-navbar-collapse-1',
+              'menu_class'        => 'nav navbar-nav',
+              'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+              'walker'            => new WP_Bootstrap_Navwalker(),
+            ) );
+            ?>
 
-        </div>
+          </div>
 
-      </nav>
+        </nav>
+
+      </div>
 
     </div>
 
-  </div>
+    <div class="row">
 
-  <div class="row">
+      <div class="col-2"></div>
 
-    <div class="col">
+      <div class="col-8 mt-5 ml-4 mr-5 pt-2">
 
-      <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+        <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
-        <div class="md-5 bg-light">
+          <div class="bg-light pl-4 pr-4 pt-3 rounded">
 
-          <h3><?php the_title(); ?></h3>
+            <h3 class="col mb-1"><?php the_title(); ?></h3>
 
-          <?php the_content(); ?>
+            <p><?php the_content(); ?></p>
 
-          <p class="text-muted">Publicado em: <span class="badge-my-color-4"><?php echo get_the_date('d/m/y'); ?></span></p>
+            <p class="text-muted">Publicado em: <span class="badge-my-color-4"><?php echo get_the_date('d/m/y'); ?></span></p>
 
-        </div>
+          </div>
 
-      <?php endwhile; ?>
+        <?php endwhile; ?>
 
-    <?php else : get_404_template(); endif; ?>
+        <?php else : get_404_template(); endif; ?>
+
+      </div>
+
+      <div class="col-2"></div>
 
     </div>
 

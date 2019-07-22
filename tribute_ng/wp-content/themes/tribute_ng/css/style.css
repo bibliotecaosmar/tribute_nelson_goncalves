@@ -7031,13 +7031,13 @@ div.background-img {
   background-size: cover;
   background-color: #0540F2; }
 
-div.row.cover-mirrored {
-  height: 173px; }
+div.cover-mirrored {
+  height: 31vh; }
 
 div.sheet-post {
   height: 100%; }
 
-.btn-primary {
+.btn-danger {
   background-color: #F24141; }
 
 .size-auto,

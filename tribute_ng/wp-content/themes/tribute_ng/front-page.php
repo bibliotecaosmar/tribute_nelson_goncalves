@@ -4,11 +4,9 @@
 
 <div class="container-fluid">
 
-  <div class="fixed-top">
+  <div class="fixed-top ">
 
-    <div class="row cover-mirrored"></div>
-
-    <div class="row">
+    <div class="row cover-mirrored align-items-end">
 
       <div class="col-6"></div>
 
@@ -65,9 +63,9 @@
 
         <?php else : get_404_template(); endif; ?>
 
-        </div>
-
       </div>
+
+    </div>
 
   </div>
 
