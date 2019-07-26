@@ -1,17 +1,19 @@
 <?php get_header(); ?>
 
+<!-- Image Background -->
 <div class="background-img bg"></div>
 
 <div class="container-fluid">
 
   <div class="fixed-top ">
 
+    <!-- Add cover with 2 faces for screen -->
     <div class="row cover-mirrored align-items-end">
 
       <div class="col-6"></div>
 
       <div class="col-6 pl-5">
-
+        <!--Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark" role="navigation">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -42,7 +44,7 @@
       <div class="col-6"></div>
 
       <div class="col-6 pl-5 mt-3">
-
+        <!-- Loop Posts -->
         <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
           <div class="blog-post card bg-transparent" style="width: 27em;">

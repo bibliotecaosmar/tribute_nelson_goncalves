@@ -23,5 +23,4 @@ require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 //Registrar menus
 register_nav_menus( array(
   'principal' => __('Menu principal', 'tribute_ng'),
-  'post'      => __('Button', 'tribute_ng')
 ));

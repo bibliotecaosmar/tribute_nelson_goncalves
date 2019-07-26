@@ -5,17 +5,16 @@
 <div class="container-fluid">
 
   <div class="fixed-top">
-
+    <!-- Cover -->
     <div class="row cover-mirrored align-items-end">
 
       <div class="col-6"></div>
 
       <div class="col-6 pl-5">
-
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark" role="navigation">
 
           <div class="container">
-
             <!-- Brand and toggle get grouped for better mobile display -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -47,7 +46,7 @@
       <div class="col-2"></div>
 
       <div class="col-8 mt-5 ml-4 mr-5 pt-2">
-
+        <!-- Body Post -->
         <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
           <div class="bg-light pl-4 pr-4 pt-3 rounded">
