@@ -13,5 +13,5 @@ WEBMEMORIAL NELSO GONÇALVES
 3. Objetivo
 - Atrair o publico jovem para conhecer sua obra
 
-## Exemplo
+## Screenshot - Home
 ![alt text](https://github.com/bibliotecaosmar/tribute_nelson_goncalves/blob/master/screenshots/home.png?raw=true)
