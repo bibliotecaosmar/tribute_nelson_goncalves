@@ -26,7 +26,7 @@ define( 'DB_NAME', 'tribute_ng' );
 define( 'DB_USER', 'root' );
 
 /** Senha do banco de dados MySQL */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'backguard' );
 
 /** Nome do host do MySQL */
 define( 'DB_HOST', 'localhost' );
